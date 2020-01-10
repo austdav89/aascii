@@ -29,7 +29,7 @@ int main(int argc, char *argv[]){
                     numonly   = 1;
                     break;
                 case 's':
-                    symonly = 1;
+                    symonly   = 1;
                     break;
                 default:
                     usage();
