@@ -1,6 +1,6 @@
 ## aascii Program
 
-This is a simple program to display all ascii characters. Ascii exended is not included.
+This is a simple program to display all ascii characters. Ascii extended is not included.
 
 Usage: ./aascii [-A | -n | -s]
 
