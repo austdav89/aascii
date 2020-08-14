@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 void usage(void){
     printf("Usage: ./aascii [-A | -n | -s]\n");
@@ -14,22 +15,22 @@ int slen(char *s){
 
 int main(int argc, char *argv[]){
     //parse args
-    int alphaonly = 0;
-    int numonly   = 0;
-    int symonly   = 0;
+    bool alphaonly = false;
+    bool numonly   = false;
+    bool symonly   = false;
 
     if(argc == 2){
         if (argv[1][0] == '-' && slen(argv[1]) == 2){
         
             switch(argv[1][1]){
                 case 'A':
-                    alphaonly = 1;
+                    alphaonly = true;
                     break;
                 case 'n':
-                    numonly   = 1;
+                    numonly   = true;
                     break;
                 case 's':
-                    symonly   = 1;
+                    symonly   = true;
                     break;
                 default:
                     usage();
